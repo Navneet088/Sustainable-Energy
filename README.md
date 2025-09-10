@@ -1,108 +1,107 @@
-Sustainable Energy Project 🌱⚡
-📌 Project Overview
+# Sustainable Energy Project 🌱⚡
 
-The Sustainable Energy project is focused on analyzing household energy consumption and building machine learning models to predict energy usage.
-The goal is to optimize electricity consumption, promote sustainable practices, and provide insights for efficient energy management.
+## 📌 Project Overview
+The **Sustainable Energy** project aims to analyze global energy data and build **predictive models** for energy consumption and renewable energy adoption.  
+The project provides **insights for sustainable energy planning** and helps understand factors influencing **electricity access, renewable energy usage, and emissions**.
 
-This project is valuable for smart grids, energy planning, and reducing environmental impact through data-driven decisions.
+---
 
-🎯 Objectives
+## 🎯 Objectives
+- Analyze global electricity and energy trends.
+- Predict **access to electricity** and **renewable energy metrics**.
+- Provide data-driven insights for **sustainable energy planning**.
+- Explore relationships between **economic indicators** and energy consumption.
 
-Predict household electricity consumption using historical and environmental data.
+---
 
-Analyze patterns and trends in energy usage.
+## 📂 Dataset
+The dataset contains global energy-related metrics per country and year. Key columns include:
 
-Promote sustainable energy practices by identifying high-consumption periods.
+| Column Name | Description |
+|-------------|-------------|
+| Entity | Country or region name |
+| Year | Year of the data |
+| Access to electricity (% of population) | Percentage of population with electricity access |
+| Access to clean fuels for cooking | Percentage of population using clean cooking fuels |
+| Renewable-electricity-generating-capacity-per-capita | Installed renewable electricity capacity per person |
+| Financial flows to developing countries (US $) | Energy-related financial flows to developing countries |
+| Renewable energy share in the total final energy consumption (%) | Share of renewables in total energy consumption |
+| Electricity from fossil fuels (TWh) | Electricity produced from fossil fuels |
+| Electricity from nuclear (TWh) | Electricity produced from nuclear sources |
+| Electricity from renewables (TWh) | Electricity produced from renewable sources |
+| Low-carbon electricity (% electricity) | Share of low-carbon electricity in total electricity generation |
+| Primary energy consumption per capita (kWh/person) | Energy consumed per person |
+| Energy intensity level of primary energy (MJ/$2017 PPP GDP) | Energy used per unit of GDP |
+| Value_co2_emissions_kt_by_country | CO2 emissions by country (in kilotons) |
+| Renewables (% equivalent primary energy) | Renewable energy as % of primary energy |
+| gdp_growth | GDP growth rate |
+| gdp_per_capita | GDP per capita |
+| Density (P/Km2) | Population density |
+| Land Area (Km2) | Total land area |
+| Latitude | Latitude coordinate |
+| Longitude | Longitude coordinate |
 
-Build a scalable machine learning solution for energy optimization.
+**Files in the repository:**
+- `sustainable_energy.csv` → Raw dataset
+- `sustainable_energy_preprocessed.csv` → Cleaned and preprocessed dataset
+- `model.pkl` → Trained machine learning model
+- `main.py` → Python script for prediction
+- `output1.csv` → Predicted results
 
-📂 Dataset
+---
 
-The project uses datasets containing:
+## ⚙️ Tech Stack
+- **Programming Language:** Python 🐍  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib  
+- **Environment:** Jupyter Notebook / VS Code  
 
-Electricity usage per household
+---
 
-Environmental data (temperature, humidity, etc.)
+## 📊 Project Workflow
+1. **Data Preprocessing**
+   - Handle missing values
+   - Encode categorical variables
+   - Normalize numeric features
 
-Time-based features (hour, day, month)
+2. **Exploratory Data Analysis (EDA)**
+   - Visualize energy access trends and renewable adoption
+   - Correlation analysis between energy metrics, GDP, and emissions
 
-Key files include:
+3. **Model Building**
+   - Split data into training and testing sets
+   - Train models like:
+     - Linear Regression
+     - Random Forest
+     - Decision Tree
+   - Select the best-performing model
 
-sustainable_energy.csv → Raw energy consumption data
+4. **Model Evaluation**
+   - Metrics: MAE, RMSE, R² score
+   - Compare **actual vs predicted values**
 
-sustainable_energy_preprocessed.csv → Cleaned and preprocessed data for modeling
+5. **Prediction & Output**
+   - Predict electricity access, renewable share, and energy consumption
+   - Save predictions in `output1.csv`
 
-⚙️ Tech Stack
+---
 
-Programming Language: Python 🐍
+## 🚀 Features
+- Predict electricity and renewable energy metrics globally
+- Explore correlations between energy, GDP, and emissions
+- Scalable and reusable machine learning model
+- Clean visualizations for better insights
 
-Libraries:
+---
 
-Pandas & NumPy → Data processing
+## 📌 Future Enhancements
+- Deploy as a **web app** using Flask/Django  
+- Include **real-time energy consumption data**  
+- Use **deep learning models** for improved predictions  
+- Build an **interactive dashboard** for global energy analytics  
 
-Matplotlib & Seaborn → Visualization
+---
 
-Scikit-learn → Machine learning models
-
-Joblib / Pickle → Model saving and loading
-
-Environment: Jupyter Notebook / VS Code
-
-📊 Project Workflow
-
-Data Preprocessing
-
-Handling missing values
-
-Encoding categorical variables
-
-Normalizing numerical features
-
-Exploratory Data Analysis (EDA)
-
-Visualizing electricity consumption trends
-
-Correlation analysis
-
-Model Building
-
-Split data into train/test sets
-
-Trained models like:
-
-Linear Regression
-
-Random Forest
-
-Decision Tree
-
-Selected the best model based on performance
-
-Model Evaluation
-
-Metrics: MAE, RMSE, R² score
-
-Comparison of actual vs predicted values
-
-Prediction
-
-Generated predictions for electricity consumption
-
-Provided insights for energy efficiency
-
-🚀 Features
-
-✅ Accurate electricity consumption predictions
-✅ Clean visualizations for analysis
-✅ Supports sustainable energy recommendations
-✅ Easy-to-use and scalable solution
-
-📌 Future Enhancements
-
-Deploy as a web application using Flask/Django
-
-Integrate real-time IoT sensor data
-
-Use deep learning for better prediction accuracy
-
-Build an interactive dashboard for energy analytics
+## 📌 Usage
+1. Clone the repository:
+```bash
+git clone https://github.com/Navneet088/Sustainable-Energy.git
